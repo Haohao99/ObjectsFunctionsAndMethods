@@ -168,12 +168,15 @@ def turtle3():
 #
 ########################################################################
 def turtle4():
+
     huh = rg.SimpleTurtle('turtle')
     huh.pen = rg.Pen('red',3)
     huh.speed = 10
+
     huh.paint_bucket = rg.PaintBucket('yellow')
     begin_point = rg.Point(huh.x_cor(),huh.y_cor())
     end_point = rg.Point(random.randrange(-200,200),random.randrange(-200,200))
+
     huh.pen_up()
     huh.go_to(end_point)
     huh.pen_down()
