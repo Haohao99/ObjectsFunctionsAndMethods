@@ -109,7 +109,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -221,7 +221,7 @@ def turtle5():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
