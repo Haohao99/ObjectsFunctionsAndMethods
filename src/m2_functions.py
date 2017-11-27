@@ -32,11 +32,14 @@ def main():
     """
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
+    window.delay(5)
 
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
+
 
     window.close_on_mouse_click()
 
@@ -137,7 +140,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -164,10 +167,24 @@ def turtle3():
 #   Get help as needed to fix any such errors.
 #
 ########################################################################
+def turtle4():
+    huh = rg.SimpleTurtle('turtle')
+    huh.pen = rg.Pen('red',3)
+    huh.speed = 10
+    huh.paint_bucket = rg.PaintBucket('yellow')
+    begin_point = rg.Point(huh.x_cor(),huh.y_cor())
+    end_point = rg.Point(random.randrange(-200,200),random.randrange(-200,200))
+    huh.pen_up()
+    huh.go_to(end_point)
+    huh.pen_down()
+    huh.begin_fill()
+    huh.draw_circle(random.randrange(-200,200))
+    huh.end_fill()
+
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
