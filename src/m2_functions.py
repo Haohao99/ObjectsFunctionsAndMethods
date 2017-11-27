@@ -32,13 +32,14 @@ def main():
     """
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
-    window.delay(5)
+    window.delay(10)
 
     turtle1()
     turtle4()
     turtle3()
     turtle2()
     turtle2()
+    turtle5()
 
 
     window.close_on_mouse_click()
@@ -169,7 +170,7 @@ def turtle3():
 ########################################################################
 def turtle4():
 
-    huh = rg.SimpleTurtle('turtle')
+    huh = rg.SimpleTurtle('triangle')
     huh.pen = rg.Pen('red',3)
     huh.speed = 10
 
@@ -184,7 +185,24 @@ def turtle4():
     huh.draw_circle(random.randrange(-200,200))
     huh.end_fill()
 
+def turtle5():
 
+    huh2 = rg.SimpleTurtle('square')
+    huh2.pen = rg.Pen('orange',3)
+    huh2.speed = 10
+
+    huh2.paint_bucket = rg.PaintBucket('pink')
+    begin_point = rg.Point(huh2.x_cor(),huh2.y_cor())
+    end_point = rg.Point(random.randrange(-150,150),random.randrange(-150,150))
+
+    huh2.pen_up()
+    huh2.go_to(end_point)
+    huh2.pen_down()
+
+    huh2.begin_fill()
+    huh2.draw_square(random.randrange(-200,200))
+    huh2.end_fill()
+    huh2.go_to(begin_point)
 ########################################################################
 #
 # DONE: 4.
