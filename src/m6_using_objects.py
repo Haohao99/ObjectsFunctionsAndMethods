@@ -98,6 +98,7 @@ def circle_and_rectangle():
     Circle.attach_to(window)
     Rectangle.attach_to(window)
     print(Circle)
+    print(Rectangle)
 
     window.render()
     window.close_on_mouse_click()
@@ -153,7 +154,7 @@ def lines():
 
     Line1.attach_to(window)
     Line2.attach_to(window)
-    
+
     window.render()
     window.close_on_mouse_click()
 
