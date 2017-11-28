@@ -232,7 +232,7 @@ def try_methods_and_functions():
     huh.backward(200)
     huh.draw_circle(30)
     huh.draw_square(50)
-    
+
 
 
 
