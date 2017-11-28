@@ -32,7 +32,7 @@ def main():
     """
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
-    window.delay(10)
+
 
     turtle1()
     turtle4()
