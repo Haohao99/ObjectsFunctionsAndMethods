@@ -221,17 +221,18 @@ def try_methods_and_functions():
     draw_many_squares(huh,2,100,30)
 
     huh.speed = 5
-    huh.pen = rg.Pen('red',5)
+    huh.pen.color = 'red'
     draw_many_squares(huh,10,50,15)
 
     huh.speed = 100
-    huh.pen = rg.Pen('red',35)
+    huh.pen.thickness = 35
     draw_many_squares(huh,8,300,60)
 
     huh.pen = rg.Pen('black',3)
     huh.backward(200)
     huh.draw_circle(30)
     huh.draw_square(50)
+    
 
 
 
